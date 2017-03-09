@@ -19,7 +19,7 @@
 // scrolling the bar to show experience level
 
     document.querySelector('#exp')
-      .addEventListener('change', function scrollExperience(eventObj){
+    .addEventListener('change', function scrollExperience(eventObj){
 
           console.log('did range input change');
           console.log(eventObj);
@@ -53,7 +53,7 @@
       });
       //
       //  http://requestb.in/17059rw1
-      //  
+      //
       // let emailPromise = fetch(
       //   document.querySelector('#work-url')
       //     .addEventListener('input', forEach(function emailInquiry(eventObj){
