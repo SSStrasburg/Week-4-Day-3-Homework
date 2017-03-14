@@ -9,6 +9,10 @@
         // prevent bubbling: eventObj.stopPropagation();
     });
 
+    document.querySelector('#full-name').addEventListener('blur', function boxBlur(eventObj) {
+      console.log(eventObj);
+    });
+
 // clicking start over button to output click
 
     document.querySelector('.btn-warning').addEventListener('click', function outputHello(eventObj){
