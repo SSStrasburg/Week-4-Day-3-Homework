@@ -11,6 +11,11 @@
 
     document.querySelector('#full-name').addEventListener('blur', function boxBlur(eventObj) {
       console.log(eventObj);
+      if(eventObj.target.value.length){
+
+      } else {
+        eventObj.target.parentNode.parentNode.classList.add('has-error') 
+      }
     });
 
 // clicking start over button to output click
