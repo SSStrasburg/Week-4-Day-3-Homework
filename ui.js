@@ -11,10 +11,10 @@
 
     document.querySelector('#full-name').addEventListener('blur', function boxBlur(eventObj) {
       console.log(eventObj);
-      if(eventObj.target.value.length){
-
+      if(eventObj.target.value.length <= 1){
+        eventObj.target.parentNode.parentNode.classList.add('has-error'); //full name element & select aside
       } else {
-        eventObj.target.parentNode.parentNode.classList.add('has-error')
+        eventObj.target.parentNode.parentNode.classList.remove('has-error')  //remove blur
       }
     });
 
@@ -33,7 +33,7 @@
           console.log('did range input change');
           console.log(eventObj);
 
-          document.querySelector('figure').innerText = eventObj.target.value + ' years';
+          document.querySelector('#exp-figure').innerText = eventObj.target.value + ' years';
     });
 
 
