@@ -1,6 +1,6 @@
 (function todoModule() {
 
-//    window.jobApp = window.jobApp || {};
+    window.jobApp = window.jobApp || {};
 
     //This prevents default action
     document.querySelector('form').addEventListener('submit', function addNewItem(eventObj) {
@@ -14,7 +14,7 @@
       if(eventObj.target.value.length){
 
       } else {
-        eventObj.target.parentNode.parentNode.classList.add('has-error') 
+        eventObj.target.parentNode.parentNode.classList.add('has-error')
       }
     });
 
